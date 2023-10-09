@@ -1,11 +1,31 @@
 // const {CircleShape, SquareShape, Triagle} = require('./shape.js')
 
 import { CircleShape, SquareShape, TriangleShape } from './lib/shapes.js';
+import inquirer from "inquirer";
 
-// import { CircleShape, SquareShape, Triangle } from "./shape.js";
 
-const circle = new TriangleShape(300, 200, 'green');
-// console.info('width', circle.width);
-// console.info('height', circle.height);
-circle.addText('Circle', 48, 'black');
-circle.saveToFile('circle.svg');
+
+inquirer
+    .prompt([
+        {
+            type: 'input',
+            name: 'svgName',
+            message: `Type 3 letters that will appear on your SVG file!`,
+        },
+        {
+            type: 'input',
+            name: 'nameColor',
+            message: `Write the hexadecimal number you want for your letters!`,
+        },
+        {
+            type: 'list',
+            name: 'shape',
+            message: 'Which shape would you like to use?',
+            choices: ['Circle','Triangle','Square' ]
+        },
+        {
+            type: 'input',
+            name: 'shapeColor',
+            message: `Write the hexadecimal number you want for your shape!`,
+        },
+    ])
