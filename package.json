@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/mimosasaurus/SVG-Logo-Maker/issues"
   },
-  "homepage": "https://github.com/mimosasaurus/SVG-Logo-Maker#readme"
+  "homepage": "https://github.com/mimosasaurus/SVG-Logo-Maker#readme",
+  "dependencies": {
+    "svg.js": "^2.7.1"
+  }
 }
