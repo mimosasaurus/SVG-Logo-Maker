@@ -9,12 +9,12 @@ inquirer
     .prompt([
         {
             type: 'input',
-            name: 'svgName',
+            name: 'text',
             message: `Type 3 letters that will appear on your SVG file!`,
         },
         {
             type: 'input',
-            name: 'nameColor',
+            name: 'textColour',
             message: `Write the hexadecimal number you want for your letters!`,
         },
         {
@@ -25,7 +25,25 @@ inquirer
         },
         {
             type: 'input',
-            name: 'shapeColor',
+            name: 'shapeColour',
             message: `Write the hexadecimal number you want for your shape!`,
         },
     ])
+    .then ((data) => {
+        let logoshape = null;
+        switch (data.shape){
+            case "Circle":
+                logoshape = new CircleShape (300,200,data.shapeColour); 
+                break;
+            case "Triangle":
+                logoshape = new TriangleShape (300,200,data.shapeColour);
+                break;
+            case "Square":
+                logoshape = new SquareShape (300,200,data.shapeColour);
+                break;
+        }
+        if (logoshape){
+            logoshape.addText(data.text, 48, data.textColour);
+            logoshape.saveToFile("logo.svg");
+        }
+    })
