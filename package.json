@@ -1,0 +1,24 @@
+{
+  "name": "svg-logo-maker",
+  "version": "1.0.0",
+  "description": "Creates logos to user specifications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mimosasaurus/SVG-Logo-Maker.git"
+  },
+  "keywords": [
+    "logo",
+    "maker",
+    "svg"
+  ],
+  "author": "Greg Rankin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mimosasaurus/SVG-Logo-Maker/issues"
+  },
+  "homepage": "https://github.com/mimosasaurus/SVG-Logo-Maker#readme"
+}
