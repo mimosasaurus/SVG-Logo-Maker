@@ -1,5 +1,6 @@
 {
   "name": "svg-logo-maker",
+  "type": "module",
   "version": "1.0.0",
   "description": "Creates logos to user specifications",
   "main": "index.js",
@@ -22,6 +23,8 @@
   },
   "homepage": "https://github.com/mimosasaurus/SVG-Logo-Maker#readme",
   "dependencies": {
-    "svg.js": "^2.7.1"
+    "@svgdotjs/svg.js": "^3.2.0",
+    "inquirer": "^9.2.11",
+    "svgdom": "^0.1.17"
   }
 }
