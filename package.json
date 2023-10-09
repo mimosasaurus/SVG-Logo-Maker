@@ -5,7 +5,7 @@
   "description": "Creates logos to user specifications",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest "
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,8 @@
     "@svgdotjs/svg.js": "^3.2.0",
     "inquirer": "^9.2.11",
     "svgdom": "^0.1.17"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }

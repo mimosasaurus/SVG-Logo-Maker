@@ -15,7 +15,7 @@ inquirer
         {
             type: 'input',
             name: 'textColour',
-            message: `Write the hexadecimal number you want for your letters!`,
+            message: `Write the colour or hexadeimal value for you want for your letters!`,
         },
         {
             type: 'list',
